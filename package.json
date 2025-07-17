@@ -1,0 +1,58 @@
+{
+  "name": "arkly-capital",
+  "version": "1.0.0",
+  "description": "Arkly Capital - Tokenized Real Estate Platform on Solana",
+  "main": "index.js",
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test",
+    "deploy:devnet": "anchor deploy --provider.cluster devnet",
+    "deploy:mainnet": "anchor deploy --provider.cluster mainnet",
+    "start": "python -m http.server 3000",
+    "lint": "cargo clippy --all-targets --all-features -- -D warnings",
+    "format": "cargo fmt",
+    "verify": "anchor verify arkly-token",
+    "verify-vault": "anchor verify property-vault"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkly-capital/arkly-capital.git"
+  },
+  "keywords": [
+    "solana",
+    "real-estate",
+    "tokenization",
+    "defi",
+    "rwa",
+    "blockchain",
+    "finance",
+    "presale",
+    "yield"
+  ],
+  "author": "Arkly Capital Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arkly-capital/arkly-capital/issues"
+  },
+  "homepage": "https://arkly.capital",
+  "devDependencies": {
+    "@project-serum/anchor": "^0.28.0",
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.8",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.28.0",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.34",
+    "@solana/wallet-adapter-wallets": "^0.19.25",
+    "bn.js": "^5.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

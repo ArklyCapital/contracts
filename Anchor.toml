@@ -1,0 +1,25 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+arkly_token = "ARKLyT0k3nM1nt7h1s1sY0urT0k3nPr0gr4mId3nt1f13r"
+property_vault = "PR0p3rtyV4u1t7h1s1sY0urPr0p3rtyT0k3n1z4t10n"
+
+[programs.devnet]
+arkly_token = "ARKLyT0k3nM1nt7h1s1sY0urT0k3nPr0gr4mId3nt1f13r"
+property_vault = "PR0p3rtyV4u1t7h1s1sY0urPr0p3rtyT0k3n1z4t10n"
+
+[programs.mainnet]
+arkly_token = "ARKLyT0k3nM1nt7h1s1sY0urT0k3nPr0gr4mId3nt1f13r"
+property_vault = "PR0p3rtyV4u1t7h1s1sY0urPr0p3rtyT0k3n1z4t10n"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
