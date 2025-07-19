@@ -1,235 +1,194 @@
-# Arkly Capital - Tokenized Real Estate Platform
+# arkly.capital
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Solana](https://img.shields.io/badge/Solana-000000?style=flat&logo=solana&logoColor=00FFA3)](https://solana.com/)
-[![Anchor](https://img.shields.io/badge/Anchor-0.28.0-blue)](https://www.anchor-lang.com/)
+> Democratizing Real Estate Investment Through Blockchain Innovation
 
-🏗️ **Production-Ready Smart Contracts for Tokenized Real Estate on Solana**
+[![Website](https://img.shields.io/badge/Website-arkly.capital-blue)](https://arkly.capital)
+[![X (Twitter)](https://img.shields.io/badge/X-@arklycap-1DA1F2)](https://x.com/arklycap?s=21)
+[![Telegram](https://img.shields.io/badge/Telegram-@arklycap-26A5E4)](https://t.me/arklycap)
+[![Status](https://img.shields.io/badge/Status-Closed%20Beta-orange)](https://arkly.capital)
 
-## ⚠️ Important Legal Notice
+## 🏗️ Project Overview
 
-**Arkly Capital Ltd.** is an international private company incorporated under the International Business Companies Act, 2016 (Seychelles). 
-- **Registered Number**: IBC-247019
-- **Registered Office**: Suite 1, Global Capital House, Mont Fleuri, Victoria, Mahé, Seychelles
-- **Legal Disclaimer**: This software does not constitute investment advice or an offer to solicit investments.
+**arkly.capital** is a decentralized finance (DeFi) platform built on Solana that bridges traditional real estate with blockchain technology through tokenized rental properties. We provide borderless access to premium real estate assets without KYC, intermediaries, or friction.
 
----
+### 🎯 Mission
 
-> **Bridging traditional real estate with decentralized finance through tokenized rental properties.**
+Democratizing real estate investment by making property ownership more accessible, transparent, and liquid than ever before—powered by cutting-edge blockchain technology and designed for the next generation of investors.
 
-Arkly Capital democratizes access to premium real estate investments by tokenizing rental properties on the Solana blockchain. Our platform enables fractional ownership, automated yield distribution, and transparent asset management through smart contracts.
+### 🌟 Key Features
 
-## 🏗️ Architecture Overview
+- **🏠 Tokenized Real Estate**: Premium rental properties converted to liquid digital assets
+- **🌐 Borderless Access**: Global investment opportunities without geographical restrictions
+- **🔒 Self-Custody**: Complete control over your assets with no intermediaries
+- **💰 Real Yield**: Earn rental income distributions automatically
+- **🚀 Solana-Native**: Built on high-performance blockchain infrastructure
+- **🔄 24/7 Liquidity**: Trade property tokens anytime with instant settlement
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend DApp │    │  Smart Contracts │    │  Real Estate    │
-│                 │    │                 │    │    Assets       │
-│ • Web Interface │◄──►│ • Property Tokens│◄──►│ • Rental Income │
-│ • Wallet Connect│    │ • Yield Distrib. │    │ • Asset Mgmt    │
-│ • Portfolio Mgmt│    │ • Governance     │    │ • Legal Wrapper │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
+## 🛣️ Roadmap
 
-## 🚀 Key Features
+### ✅ Completed Milestones
 
-- **Fractional Ownership**: Own portions of premium real estate starting from $350
-- **Automated Yield**: Receive rental income distributions through smart contracts
-- **Transparent Management**: On-chain governance and asset performance tracking
-- **Cross-Border Access**: Global investment opportunities without traditional barriers
-- **Liquid Secondary Market**: Trade property tokens on decentralized exchanges
+| Date | Milestone | Status |
+|------|-----------|--------|
+| **Aug 2024** | Project Initiated | ✅ Completed |
+| **Nov 2024** | Seed Funding Secured | ✅ $1M Raised |
+| **Q1 2025** | MVP Launch | ✅ Deployed on Solana devnet |
 
-## 📊 Tokenomics
+### 🔄 Current & Upcoming
 
-| Allocation | Tokens | Percentage | Price | Vesting |
-|------------|--------|------------|-------|---------|
-| **Seed Round** | 12,000,000 | 12% | $0.083 | 6-month cliff, 12-month linear |
-| **Public Presale** | 7,500,000 | 7.5% | $0.10 | 100% liquid at TGE |
-| **Liquidity Pool** | 10,000,000 | 10% | $0.15 | 50% at TGE, 50% after 30 days |
-| **Team & Advisors** | 15,000,000 | 15% | - | 12-month cliff, 24-month linear |
-| **Ecosystem/Rewards** | 25,000,000 | 25% | - | Progressive over 36 months |
-| **Treasury/Dev** | 20,000,000 | 20% | - | Multi-sig, roadmap-based |
-| **Strategic Partners** | 5,000,000 | 5% | - | 6-month cliff, 12-month vesting |
-| **Community/Airdrops** | 8,000,000 | 8% | - | Claim-based distribution |
+| Quarter | Milestone | Description |
+|---------|-----------|-------------|
+| **Q2 2025** | Community Onboarding | Early-access users invited, infrastructure scaling |
+| **Q3 2025** | Security Audit | Independent security audit by top-tier firms |
+| **Q4 2025** | Public Launch | Full production deployment with mainnet release |
 
-**Total Supply**: 100,000,000 $ARKLY  
-**Hardcap**: $750,000
+## 🪙 Tokenomics
 
-## 🛠️ Technology Stack
+### $ARKLY Token Distribution
 
-### Smart Contracts
-- **Framework**: Anchor (Solana)
-- **Language**: Rust
-- **Programs**: Property tokenization, yield distribution, governance
+- **Total Supply**: 100,000,000 $ARKLY
+- **Hardcap**: $750,000
 
-### Frontend
-- **Framework**: Next.js + TypeScript
-- **Wallet**: Solana Wallet Adapter
-- **UI**: Tailwind CSS + Custom Components
-- **Web3**: @solana/web3.js
-
-### Backend Infrastructure
-- **API**: Node.js + Express
-- **Database**: PostgreSQL + Redis
-- **Monitoring**: DataDog, Sentry
-- **Infrastructure**: AWS + CDN
-
-## 📁 Repository Structure
-
-```
-arkly-capital/
-├── programs/                 # Solana smart contracts
-│   ├── arkly-token/         # $ARKLY token program
-│   ├── property-vault/      # Property tokenization
-│   ├── yield-distributor/   # Automated yield distribution
-│   └── governance/          # DAO governance contracts
-├── app/                     # Frontend application
-│   ├── components/          # React components
-│   ├── pages/              # Next.js pages
-│   ├── hooks/              # Custom React hooks
-│   └── utils/              # Utility functions
-├── api/                     # Backend services
-│   ├── routes/             # API endpoints
-│   ├── services/           # Business logic
-│   └── models/             # Data models
-├── tests/                   # Test suites
-├── docs/                   # Documentation
-└── scripts/                # Deployment scripts
-```
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 18+
-- Rust 1.70+
-- Solana CLI 1.16+
-- Anchor CLI 0.28+
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/arklycap/arkly-capital.git
-   cd arkly-capital
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   cd programs && cargo build-bpf
-   ```
-
-3. **Configure environment**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-4. **Deploy smart contracts** (Devnet)
-   ```bash
-   anchor build
-   anchor deploy
-   ```
-
-5. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-Visit `http://localhost:3000` to see the application.
+| Category | Allocation | Percentage |
+|----------|------------|------------|
+| **Seed Round** | 12,000,000 | 12% |
+| **Public Presale** | 7,500,000 | 7.5% |
+| **Liquidity Pool** | 10,000,000 | 10% |
+| **Team & Advisors** | 15,000,000 | 15% |
+| **Ecosystem/Rewards** | 25,000,000 | 25% |
+| **Treasury/Dev** | 20,000,000 | 20% |
+| **Strategic Partners** | 5,000,000 | 5% |
+| **Community/Airdrops** | 8,000,000 | 8% |
 
 ## 🔐 Security
 
-### Smart Contract Audits
-- [ ] Trail of Bits - Q1 2025
-- [ ] Certik - Q1 2025
-- [ ] Halborn - Q2 2025
+### Security Framework
 
-### Security Features
-- Multi-signature treasury management
-- Time-locked contract upgrades
-- Emergency pause functionality
-- Automated yield verification
-- KYC/AML compliance integration
+- **🔓 Open Source**: All smart contracts publicly verifiable
+- **🛡️ Multi-Signature**: Critical functions require multiple approvals
+- **🏆 Third-Party Audits**: Independent security reviews scheduled for Q3 2025
+- **🧪 Testnet Validation**: Extensive testing on Solana devnet
+- **💰 Bug Bounty**: Up to $5,000 rewards for vulnerability reports
 
-### Bug Bounty Program
-We offer rewards up to **$50,000** for critical vulnerabilities. See [SECURITY.md](./SECURITY.md) for details.
+### Security Timeline
 
-## 🏛️ Governance
+| Phase | Timeline | Status |
+|-------|----------|--------|
+| **MVP Security** | Q1 2025 | ✅ Completed |
+| **Community Testing** | Q2 2025 | 🔄 In Progress |
+| **Security Audit** | Q3 2025 | 📅 Scheduled |
+| **Mainnet Launch** | Q4 2025 | 🚀 Planned |
 
-Arkly operates as a DAO with the following governance structure:
+## 🏢 Company Information
 
-- **Proposal Threshold**: 100,000 $ARKLY
-- **Voting Period**: 7 days
-- **Quorum**: 10% of circulating supply
-- **Timelock**: 24 hours for execution
+**Arkly Capital Ltd.**
+- **Registration**: International Business Companies Act, 2016 (Seychelles)
+- **Registration Number**: IBC-247019
+- **Registered Office**: Suite 1, Global Capital House, Mont Fleuri, Victoria, Mahé, Seychelles
 
-### Governance Powers
-- Property acquisition proposals
-- Fee structure modifications
-- Treasury fund allocation
-- Protocol upgrades
+## 🌍 Core Values
 
-## 📈 Roadmap
+### 🛡️ Trust & Security
+Every asset is thoroughly vetted and secured through multi-signature protocols and smart contracts.
 
-### Q1 2025
-- [ ] Smart contract development
-- [ ] Security audits
-- [ ] Public presale launch
-- [ ] MVP platform release
+### 🌐 Global Accessibility
+Breaking down geographical barriers to make real estate investment accessible to anyone, anywhere.
 
-### Q2 2025
-- [ ] First property tokenization
-- [ ] Yield distribution implementation
-- [ ] Mobile app launch
-- [ ] Partnership integrations
+### 📈 Sustainable Growth
+Building long-term value through sustainable practices and responsible investment strategies.
 
-### Q3 2025
-- [ ] Multi-asset portfolio
-- [ ] Advanced analytics dashboard
-- [ ] Cross-chain bridge (Ethereum)
-- [ ] Institutional partnerships
+## 🚀 DeFi Principles
 
-### Q4 2025
-- [ ] Global expansion
-- [ ] REITs integration
-- [ ] Advanced DeFi features
-- [ ] Mobile trading suite
+### Decentralized Architecture
+- **Self-custody** of digital assets and tokens at all times
+- **Permissionless access** to all platform features
+- **No KYC** or personal data collection requirements
+- **Autonomous smart contract** operations
+- **Community governance** through token holders
 
-## 🤝 Contributing
+### Privacy by Design
+- **No personal data collection** - pseudonymous wallet interactions only
+- **Blockchain transparency** - all transactions publicly verifiable
+- **User sovereignty** - complete control over private keys and assets
+- **Decentralized infrastructure** - no single points of failure
 
-We welcome contributions from the community! Please read our [Contributing Guidelines](./CONTRIBUTING.md) before submitting pull requests.
+## 📊 Platform Features
 
-### Development Workflow
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
+### For Investors
+- **Fractional Ownership**: Start with any amount, own portions of premium properties
+- **Real-Time Yields**: Automated rental income distributions
+- **Portfolio Diversification**: Access to multiple property types and locations
+- **Instant Liquidity**: Trade tokens 24/7 without traditional real estate delays
 
-## 📄 Legal & Compliance
+### For Property Owners
+- **Instant Liquidity**: Convert illiquid real estate to tradeable tokens
+- **Reduced Fees**: Lower costs compared to traditional real estate transactions
+- **Global Reach**: Access international investor pools
+- **Transparent Management**: Blockchain-based property management
 
-Arkly Capital operates under the regulatory framework of international jurisdictions:
+## 🛠️ Technical Stack
 
-- **Entity**: Arkly Capital Ltd. (Seychelles IBC)
-- **Registration**: IBC-247019
-- **Compliance**: KYC/AML procedures implemented
-- **Disclaimer**: Not available to US persons or restricted jurisdictions
+- **Blockchain**: Solana
+- **Smart Contracts**: Rust/Anchor framework
+- **Frontend**: Modern web technologies
+- **Infrastructure**: Decentralized storage (IPFS)
+- **Oracles**: Real-world data integration
+- **Security**: Multi-signature wallets, formal verification
 
-## 📞 Contact & Support
+## 🔗 Links & Resources
 
 - **Website**: [arkly.capital](https://arkly.capital)
-- **Email**: team@arkly.capital
-- **Twitter**: [@arklycap](https://x.com/arklycap)
-- **Telegram**: [t.me/arklycap](https://t.me/arklycap)
-- **GitHub**: [github.com/arklycap](https://github.com/arklycap)
+- **Documentation**: [docs.arkly.capital](https://docs.arkly.capital) (Coming Soon)
+- **Twitter**: [@arklycap](https://x.com/arklycap?s=21)
+- **Telegram**: [@arklycap](https://t.me/arklycap)
+- **GitHub**: [ArklyCapital](https://github.com/ArklyCapital)
 
-## 📋 License
+## 📞 Contact
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+- **General Inquiries**: contact@arkly.capital
+- **Security Reports**: contact@arkly.capital
+- **Partnership Opportunities**: contact@arkly.capital
+
+## ⚠️ Important Notice
+
+**Arkly is currently in closed beta.** Public launch is planned for Q4 2025. All features and signups are closed to the public until then. You can browse all pages and documentation, but no features are open to the public yet.
+
+## 📜 Legal
+
+- **Terms of Service**: [arkly.capital/terms](https://arkly.capital/terms.html)
+- **Privacy Policy**: [arkly.capital/privacy](https://arkly.capital/privacy.html)
+- **Legal Framework**: [arkly.capital/legal](https://arkly.capital/legal.html)
+
+## 🎯 Investment Thesis
+
+Real estate remains the world's largest asset class ($280+ trillion globally), yet it's largely inaccessible to retail investors due to high barriers to entry, illiquidity, and geographical restrictions. Arkly bridges this gap by:
+
+1. **Lowering barriers**: Fractional ownership starting from any amount
+2. **Providing liquidity**: 24/7 trading of property tokens
+3. **Ensuring transparency**: Blockchain-based ownership records
+4. **Delivering yield**: Automated rental income distributions
+5. **Enabling global access**: Borderless investment opportunities
+
+## 📈 Market Opportunity
+
+- **Global Real Estate Market**: $280+ trillion
+- **Tokenized Real Estate Projection**: $3.7 trillion by 2030
+- **DeFi Total Value Locked**: $100+ billion
+- **Rental Income Market**: $4.5 trillion annually
+
+## 🔮 Future Vision
+
+Arkly envisions a future where:
+- Real estate investment is as easy as buying a token
+- Property ownership is truly global and accessible
+- Rental income flows seamlessly through DeFi protocols
+- Traditional real estate barriers no longer exist
+- Everyone can participate in the real estate economy
 
 ---
 
-**⚠️ Risk Disclaimer**: Investing in tokenized real estate involves significant risks. Past performance is not indicative of future results. Please read our full risk disclosure before participating.
+**Built with ❤️ by the Arkly team**
 
-**🔒 Security Notice**: Never share your private keys or seed phrases. Arkly team will never ask for your private keys.
+*© 2025 Arkly Capital Ltd. All rights reserved.*
+
+*DeFi protocols involve risk. This platform is experimental and designed for sophisticated users familiar with decentralized finance.*
