@@ -44,9 +44,9 @@ Democratizing real estate investment by making property ownership more accessibl
 
 ## 🪙 Tokenomics
 
-### $ARKLY Token Distribution
+### $ARK Token Distribution
 
-- **Total Supply**: 100,000,000 $ARKLY
+- **Total Supply**: 100,000,000 $ARK
 - **Hardcap**: $750,000
 
 | Category | Allocation | Percentage |
